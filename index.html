@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Amazon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>🛒 Mini Amazon</h2>
+  <a href="cart.html">Cart 🛍 (<span id="cartCount">0</span>)</a>
+</header>
+
+<div class="products" id="productList"></div>
+
+<!-- Product Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span onclick="closePopup()">✖</span>
+    <img id="popupImg">
+    <h3 id="popupTitle"></h3>
+    <p id="popupPrice"></p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
